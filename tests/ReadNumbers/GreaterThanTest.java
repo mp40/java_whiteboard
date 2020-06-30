@@ -1,11 +1,11 @@
-package CountNumbers;
-
+package ReadNumbers;
 
 import java.io.FileNotFoundException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.fail;
 
-public class CountNumbers {
+public class GreaterThanTest {
 
     @org.junit.jupiter.api.Test
     public void simulateFail() {
@@ -13,8 +13,8 @@ public class CountNumbers {
     }
 
     @org.junit.jupiter.api.Test
-    public void Numbers() throws FileNotFoundException {
-        Numbers numbers = new Numbers();
+    public void FindNumbersGreaterThanOrEqualTo9999() throws FileNotFoundException {
+        GreaterThan numbers = new GreaterThan();
         int result = numbers.getResult();
         assertEquals(9899, result);
     }
